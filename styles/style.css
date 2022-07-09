@@ -1,0 +1,224 @@
+:root {
+    --main-font: font-family: 'Roboto', sans-serif;
+    --secondary-font: font-family: 'Raleway', sans-serif;
+    --main-color: #2196f3;
+    --secondary-color: #F5F4FA;
+    --third-color: #2F303A;
+    --fourth-color: #757575;
+    --fifth-color: #212121;
+    --sixth-color: #ffffff;
+}
+/*/////////////////////.container {
+    width: 1200px;
+}*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: black;
+    width: 1600px;
+    height: 2349px;
+    justify-content: center;
+    margin: 0 auto;
+}
+.wrapper{
+    display: flex;
+}
+/* ----------------MIN-RESET------------------------- */
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+/* ----------------MIN-RESET-END--------------------- */
+
+/* ----------------COMPONENTS------------------------ */
+.button-style {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 1.875;
+
+    background: #F5F4FA;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    color: #212121;
+    cursor: pointer;  
+}
+.button-style:hover {
+    background-color: #2196f3;
+    color: #ffffff;
+}
+.button-style:hover {
+    background-color: #2196f3;
+    color: #ffffff;
+}
+/* ----------------COMPONENTS-END-------------------- */
+
+/* --------------------HEADER------------------------ */
+
+.header-description {
+    background-color: #F5F4FA;
+    width: 1600px;
+    height: 80px;
+    display: flex;
+}
+/*.navigation {}
+.navigation-list {} */
+.navigation-list-webstudio {
+    text-decoration: none;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin: 24px 1240px 25px 215px;
+}
+.highlight-webstudio {
+    text-decoration: none;
+    color: #2196f3;
+    font-family: 'Raleway', sans-serif;
+}
+.navigation-list-link {
+    text-decoration: none;
+    font-style:normal;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 2%;}
+.navigation-list-link:hover {color: rgba(33, 150, 243, 1);}
+.navigation-list-link:focus {color: rgba(33, 150, 243, 1);}
+
+/*.contact {}*/
+.contact-link {
+    text-decoration: none;
+    font-style: normal;
+    color: #757575;
+    line-height: 1.714;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 3%;
+    display: block;}
+.contact-link:hover {color: rgba(33, 150, 243, 1);}
+.contact-link:focus {color: rgba(33, 150, 243, 1);}
+
+/* --------------------HEADER-END--------------------- */
+
+/* --------------------MAIN--------------------------- */
+
+/*.main-description {}*/
+.main-first-section-effective-solutions {
+    background-color: #2F303A;
+    width: 1600px;
+    height: 600px;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 44px;
+    color: #ffffff;
+    text-align: center;
+    padding: 200px 452px 280px 452px;
+    line-height: 1.36;
+}
+/* -------------main-SECONDARY------------------------ */
+
+.main-secondary-section-what-we-do {
+    width: 1600px;
+}
+.text-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 3%;
+    text-decoration: bold;
+}
+.text-title-description{
+    color: #757575;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 3%;
+}
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166;
+    text-decoration: Bold;
+    letter-spacing: 3%;
+    text-align: center;
+}
+h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 3%;
+    text-align: center;
+}
+.job-name {
+    color: #757575;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 3%;
+    text-align: center;
+}
+/* -----------------main-THIRD------------------------ */
+
+.main-third-section-our-team {
+    background-color: #F5F4FA;
+    width: 1600px;
+    height: 648px;
+}
+/* --------------------MAIN-END---------------------- */
+
+.footer-description {
+    background-color: #2F303A;
+    width: 1600px;
+    height: 252px;
+}
+.contact-link-maps {
+    color: #ffffff;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 3%;}
+.contact-link-maps:hover {color: rgba(33, 150, 243, 1);}
+.contact-link-maps:focus {color: rgba(33, 150, 243, 1);}
+
+
+/* --------------------PORTFOLIO-page----------------- */
+.conteren-img {
+    width: 1170px; 
+    height: 1360px;
+}
+.tilie-2-porftolio {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center; 
+}
+.tilie-2-porftolio-description {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+/* --------------------PORTFOLIO-end----------------- */
+

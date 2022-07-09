@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pl">
   <head>
     <!--service information-->
@@ -6,11 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,102 +17,81 @@
   </head>
 
   <body>
+    <!--//////////////////////<section class="container">-->
     <!--content-->
-    <header>
+    <header class="header-description">
       <!--navigation menu-->
-      <nav>
-        <ol>
+      <nav class="navigation">
+        <ol class="navigation-list">
           <li>
             <h3>
-              <a class="webstudio" href="./index.html"
-                ><span class="highlight" alt="Logo WebStudio">Web</span
-                >Studio</a
+              <a class="navigation-list-webstudio" href="./index.html"
+                ><span class="highlight-webstudio">Web</span>Studio</a
               >
             </h3>
           </li>
           <!-- navigation to other pages -->
           <li>
-            <a
-              class="link"
-              href="./agencja.html"
-              alt="Przekierowanie do agencja"
-              >Agencja</a
-            >
+            <a class="navigation-list-link" href="./agencja.html">Agencja</a>
           </li>
           <li>
-            <a
-              class="link"
-              href="./portfolio.html"
-              alt="Przekierowanie do portfolio"
+            <a class="navigation-list-link" href="./portfolio.html"
               >Portfolio</a
             >
           </li>
           <li>
-            <a
-              class="link"
-              href="./kontakt.html"
-              alt="Przekierowanie do kontakt"
-              >Kontakt</a
-            >
+            <a class="navigation-list-link" href="./kontakt.html">Kontakt</a>
           </li>
         </ol>
       </nav>
       <div class="contact">
         <h6>
-          <a
-            class="link-2"
-            href="mailto:info@devstudio.com"
-            alt="Napisz do nas. Przekierowanie do poczty mailowej"
+          <a class="contact-link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </h6>
         <h6>
-          <a
-            class="link-2"
-            href="tel:+48111111111"
-            alt="Zadzwoń do nas. Przekierowanie do numeru telefonu"
-            >(48) 111-111-111</a
-          >
+          <a class="contact-link" href="tel:+48111111111">(48) 111-111-111</a>
         </h6>
       </div>
     </header>
 
-    <main>
-      <section>
-        <!section-1-EFEKTYWNE-ROZWIĄZANIA-effective-solutions-->
+    <main class="main-description">
+      <section class="main-first-section-effective-solutions">
+        <!--section-1-EFEKTYWNE-ROZWIĄZANIA-effective-solutions-->
         <h1 class="slogan">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
         <!--button-->
         <button class="button-style">Zamów usługę</button>
       </section>
 
-      <section>
+      <section class="main-secondary-section-what-we-do">
         <!--section-2 CZYM SIE ZAJMUJEMY-what we do-->
         <div>
-          <ul>
+          <ul class="wrapper">
             <li>
-              <h5>LOREM IPSUM</h5>
-              <p>
+              <h5 class="text-title">LOREM IPSUM</h5>
+              <p class="text-title-description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
             <li>
-              <h5>LOREM IPSUM</h5>
-              <p>
+              <h5 class="text-title">LOREM IPSUM</h5>
+              <p class="text-title-description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
             <li>
-              <h5>LOREM IPSUM</h5>
-              <p>
+              <h5 class="text-title">LOREM IPSUM</h5>
+              <p class="text-title-description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
             <li>
-              <h5>LOREM IPSUM</h5>
-              <p>
+              <h5 class="text-title">LOREM IPSUM</h5>
+              <p class="text-title-description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
@@ -145,10 +121,10 @@
           />
         </div>
       </section>
-      <section>
+      <section class="main-third-section-our-team">
         <!--section-3 NASZ ZESPOL-our team-->
         <h2>Nasz zespół</h2>
-        <ul>
+        <ul class="wrapper">
           <li>
             <figure>
               <img
@@ -160,7 +136,7 @@
             </figure>
             <figcaption>
               <h4>John Doe</h4>
-              <p>Product Designer</p>
+              <p class="job-name">Product Designer</p>
             </figcaption>
           </li>
           <li>
@@ -174,7 +150,7 @@
             </figure>
             <figcaption>
               <h4>Nicole Doe</h4>
-              <p>Frontend Developer</p>
+              <p class="job-name">Frontend Developer</p>
             </figcaption>
           </li>
           <li>
@@ -188,7 +164,7 @@
             </figure>
             <figcaption>
               <h4>Mike Newton</h4>
-              <p>Marketing</p>
+              <p class="job-name">Marketing</p>
             </figcaption>
           </li>
           <li>
@@ -202,51 +178,51 @@
             </figure>
             <figcaption>
               <h4>Noah Bee</h4>
-              <p>UI Designer</p>
+              <p class="job-name">UI Designer</p>
             </figcaption>
           </li>
         </ul>
       </section>
     </main>
 
-    <footer>
+    <footer class="footer-description">
       <!--footer-content dane-kontaktowe-contact details-->
       <ul>
         <li>
           <h3>
-            <a class="webstudio" href="./index.html"
-              ><span class="highlight" alt="Logo WebStudio">Web</span>Studio</a
+            <a class="navigation-list-webstudio" href="./index.html"
+              ><span class="highlight-webstudio" alt="Logo WebStudio">Web</span
+              >Studio</a
             >
           </h3>
         </li>
-        <li>
-          <h6>
-            <a class="text" href="https://goo.gl/maps/ytyZVktENLEFnypA7"
-              >m. Warszawa, Aleje Jerozolimskie 21</a
-            >
-          </h6>
-        </li>
-        <li>
-          <h6>
-            <a
-              class="link-2"
-              href="mailto:info@devstudio.com"
-              alt="Napisz do nas. Przekierowanie do poczty mailowej"
-              >info@devstudio.com</a
-            >
-          </h6>
-        </li>
-        <li>
-          <h6>
-            <a
-              class="link-2"
-              href="tel:+48111111111"
-              alt="Zadzwoń do nas. Przekierowanie do numeru telefonu"
-              >(48) 111-111-111</a
-            >
-          </h6>
-        </li>
+        <address>
+          <li>
+            <h6>
+              <a
+                class="contact-link-maps"
+                href="https://goo.gl/maps/ytyZVktENLEFnypA7"
+                >m. Warszawa, Aleje Jerozolimskie 21</a
+              >
+            </h6>
+          </li>
+          <li>
+            <h6>
+              <a class="contact-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </h6>
+          </li>
+          <li>
+            <h6>
+              <a class="contact-link" href="tel:+48111111111"
+                >(48) 111-111-111</a
+              >
+            </h6>
+          </li>
+        </address>
       </ul>
     </footer>
+    <!--//////////////////////</section>-->
   </body>
 </html>
