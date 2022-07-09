@@ -1,0 +1,39 @@
+.body {
+    background: #ffffff;
+    color:#212121
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    width: 1600px;
+    height: 2349px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+.link{
+    color: #212121;
+    text-decoration: none;
+
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 1.17;
+}
+.link-2{
+    text-decoration: none;
+    color: #757575;
+}
+.link:hover{
+    color: rgba(33, 150, 243, 1);
+}
+.link-2:hover{
+    color: rgba(33, 150, 243, 1);
+}
+.link:focus{
+    color: rgba(33, 150, 243, 1);
+}
+.link-2:focus{
+    color: rgba(33, 150, 243, 1);
+}
