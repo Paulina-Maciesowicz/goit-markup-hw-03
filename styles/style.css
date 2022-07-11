@@ -25,6 +25,7 @@ body {
 }
 .wrapper{
     display: flex;
+    padding: 0;
 }
 /* ----------------MIN-RESET------------------------- */
 
@@ -56,6 +57,28 @@ img {
 /* ----------------MIN-RESET-END--------------------- */
 
 /* ----------------COMPONENTS------------------------ */
+.button-style-1 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 1.875;
+    background: #F5F4FA;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    color: #212121;
+    cursor: pointer;
+    position: absolute;
+    margin: 350px 700px 200px 700px;
+}
+.button-style-1:hover {
+    background-color: #2196f3;
+    color: #ffffff;
+}
+.button-style-1:hover {
+    background-color: #2196f3;
+    color: #ffffff;
+}
 .button-style {
     font-weight: 700;
     font-size: 16px;
@@ -67,7 +90,9 @@ img {
     height: 50px;
     border-radius: 4px;
     color: #212121;
-    cursor: pointer;  
+    cursor: pointer;
+    justify-content: center;
+    margin: 8px;
 }
 .button-style:hover {
     background-color: #2196f3;
@@ -77,6 +102,7 @@ img {
     background-color: #2196f3;
     color: #ffffff;
 }
+
 /* ----------------COMPONENTS-END-------------------- */
 
 /* --------------------HEADER------------------------ */
@@ -88,18 +114,22 @@ img {
     left: 0px;
     top: 0px;
     display: inline-flex;
+    align-items: center;
 }
 .navigation-list {
     display: inline-flex;
+    vertical-align: auto;
+    align-items: center;
 }
 .navigation-logo { 
     margin-right: 93px;
+    margin-bottom: 25px;
 }
 .navigation-list-webstudio {
     text-decoration: none;
     color: black;
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;    
+    font-weight: 700;
 }
 .highlight-webstudio {
     text-decoration: none;
@@ -113,14 +143,16 @@ img {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.142;
-    letter-spacing: 2%;}
-.navigation-list-link-item:not(:last-child) {margin-right: 46px;}
+    letter-spacing: 2%;
+    margin-right: 46px;}
 .navigation-list-link:hover {color: rgba(33, 150, 243, 1);}
 .navigation-list-link:focus {color: rgba(33, 150, 243, 1);
 }
-.contact { 
+.contact {
     display: flex;
-    padding-left: 379px;
+    padding-left: 371px;
+    padding-right: 215px;
+    align-items: center;
 }
 .contact-link {
     text-decoration: none;
@@ -130,8 +162,8 @@ img {
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 3%;
-    margin-left: 50px;
-    margin-right: 50px;}
+    margin-right: 50px;
+}
 .contact-link:hover {color: rgba(33, 150, 243, 1);}
 .contact-link:focus {color: rgba(33, 150, 243, 1);}
 
@@ -139,11 +171,11 @@ img {
 
 /* --------------------MAIN--------------------------- */
 
-/*.main-description {}*/
 .main-first-section-effective-solutions {
     background-color: #2F303A;
     width: 1600px;
     height: 600px;
+    display: flex;
 }
 h1 {
     font-family: 'Roboto', sans-serif;
@@ -151,13 +183,22 @@ h1 {
     font-size: 44px;
     color: #ffffff;
     text-align: center;
-    padding: 200px 452px 280px 452px;
-    line-height: 1.36;
+    margin: 200px 452px 280px 452px;
+    line-height: 1.363;
 }
 /* -------------main-SECONDARY------------------------ */
 
 .main-secondary-section-what-we-do {
     width: 1600px;
+}
+.container-info {
+    width: 1170px;
+    height: 101px;
+    margin: 0 auto;
+    padding-left: 215px;
+    padding-right: 215px;
+    display: flex;
+    margin-bottom: 94px;
 }
 .text-title{
     font-weight: 700;
@@ -180,6 +221,7 @@ h2 {
     text-decoration: Bold;
     letter-spacing: 3%;
     text-align: center;
+    margin-bottom: 50px;
 }
 h4 {
     font-weight: 500;
@@ -188,8 +230,13 @@ h4 {
     letter-spacing: 3%;
     text-align: center;
 }
-.what-we-do-photo{
+.what-we-do-photo {
+    width: 1200px;
     display: flex;
+    padding-left: 215px;
+    padding-right: 215px;
+    display: flex;
+    justify-content: space-between;
 }
 .job-name {
     color: #757575;
@@ -201,10 +248,18 @@ h4 {
 }
 /* -----------------main-THIRD------------------------ */
 
+.our-team {
+    padding-top: 94px;
+}
 .main-third-section-our-team {
     background-color: #F5F4FA;
     width: 1600px;
-    height: 648px;
+    height: 648px;   
+}
+.container-our-team {
+    display: flex;
+    padding: 0;
+    justify-content: center;
 }
 /* --------------------MAIN-END---------------------- */
 
@@ -223,13 +278,29 @@ h4 {
     letter-spacing: 3%;}
 .contact-link-maps:hover {color: rgba(33, 150, 243, 1);}
 .contact-link-maps:focus {color: rgba(33, 150, 243, 1);}
+.contact-link-footer {
+    margin-bottom: 9px;
+}
+address {
+   margin-left: 215px;
+}
 
 
 /* --------------------PORTFOLIO-page----------------- */
-.contener-img {
-    width: 1170px; 
-    height: 1360px;
+.container-btn {
+    width: 1200px;
+    display: flex;
+    padding-left: 215px;
+    margin-top: 94px;
+    margin-bottom: 50px;
+    justify-content: center;
 }
+.contener-img {
+    width: 1170px;
+}
+.box:nth-of-type(3n+1) { margin-left: 0;}
+.box:nth-of-type(3n) { margin-right: 0;}
+.box:nth-last-of-type(-n+3) { margin-bottom: 0;}
 .tilie-2-porftolio {
     font-weight: 700;
     font-size: 18px;
