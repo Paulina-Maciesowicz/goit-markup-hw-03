@@ -8,17 +8,20 @@
     --fifth-color: #212121;
     --sixth-color: #ffffff;
 }
-/*/////////////////////.container {
+.container {
     width: 1200px;
-}*/
+    display: flex;
+    padding-left: 215px;
+    padding-right: 215px;
+}
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #ffffff;
     color: black;
     width: 1600px;
     height: 2349px;
-    justify-content: center;
     margin: 0 auto;
+    line-height: 1;
 }
 .wrapper{
     display: flex;
@@ -29,22 +32,26 @@ body {
 :focus {
 	outline: 0;
 }
-body {
-	line-height: 1;
-	color: black;
-	background: white;
-}
 ol, ul {
 	list-style: none;
+    margin 0;
+    padding 0;
+} 
+h1, h2, h3, h4, h5, h6 {
+    margin 0;
+    padding 0;
 }
-/* tables still need 'cellspacing="0"' in the markup */
-table {
-	border-collapse: separate;
-	border-spacing: 0;
+p {
+    padding 0;
 }
-caption, th, td {
-	text-align: left;
-	font-weight: normal;
+.list {
+    list-style: none
+}
+.link {
+    text-decoration: none
+}
+img {
+    display: block;
 }
 /* ----------------MIN-RESET-END--------------------- */
 
@@ -78,16 +85,21 @@ caption, th, td {
     background-color: #F5F4FA;
     width: 1600px;
     height: 80px;
-    display: flex;
+    left: 0px;
+    top: 0px;
+    display: inline-flex;
 }
-/*.navigation {}
-.navigation-list {} */
+.navigation-list {
+    display: inline-flex;
+}
+.navigation-logo { 
+    margin-right: 93px;
+}
 .navigation-list-webstudio {
     text-decoration: none;
     color: black;
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    margin: 24px 1240px 25px 215px;
+    font-weight: 700;    
 }
 .highlight-webstudio {
     text-decoration: none;
@@ -102,10 +114,14 @@ caption, th, td {
     font-size: 14px;
     line-height: 1.142;
     letter-spacing: 2%;}
+.navigation-list-link-item:not(:last-child) {margin-right: 46px;}
 .navigation-list-link:hover {color: rgba(33, 150, 243, 1);}
-.navigation-list-link:focus {color: rgba(33, 150, 243, 1);}
-
-/*.contact {}*/
+.navigation-list-link:focus {color: rgba(33, 150, 243, 1);
+}
+.contact { 
+    display: flex;
+    padding-left: 379px;
+}
 .contact-link {
     text-decoration: none;
     font-style: normal;
@@ -114,7 +130,8 @@ caption, th, td {
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 3%;
-    display: block;}
+    margin-left: 50px;
+    margin-right: 50px;}
 .contact-link:hover {color: rgba(33, 150, 243, 1);}
 .contact-link:focus {color: rgba(33, 150, 243, 1);}
 
@@ -171,6 +188,9 @@ h4 {
     letter-spacing: 3%;
     text-align: center;
 }
+.what-we-do-photo{
+    display: flex;
+}
 .job-name {
     color: #757575;
     font-weight: 400;
@@ -206,7 +226,7 @@ h4 {
 
 
 /* --------------------PORTFOLIO-page----------------- */
-.conteren-img {
+.contener-img {
     width: 1170px; 
     height: 1360px;
 }

@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,44 +18,47 @@
   </head>
 
   <body>
-    <!--//////////////////////<section class="container">-->
     <!--content-->
     <header class="header-description">
+      <div class="container">
       <!--navigation menu-->
-      <nav class="navigation">
+      <nav>
         <ol class="navigation-list">
           <li>
-            <h3>
+            
+            <h3 class="navigation-logo">
               <a class="navigation-list-webstudio" href="./index.html"
                 ><span class="highlight-webstudio">Web</span>Studio</a
               >
             </h3>
+           
           </li>
           <!-- navigation to other pages -->
-          <li>
-            <a class="navigation-list-link" href="./agencja.html">Agencja</a>
+          <li class=".navigation-list-link-item">
+            <a class="navigation-list-link" list href="./agencja.html">Agencja</a>
           </li>
-          <li>
-            <a class="navigation-list-link" href="./portfolio.html"
+          <li class=".navigation-list-link-item">
+            <a class="navigation-list-link" list href="./portfolio.html"
               >Portfolio</a
             >
           </li>
-          <li>
-            <a class="navigation-list-link" href="./kontakt.html">Kontakt</a>
+          <li class=".navigation-list-link-item">
+            <a class="navigation-list-link" list href="./kontakt.html">Kontakt</a>
           </li>
         </ol>
       </nav>
       <div class="contact">
         <h6>
-          <a class="contact-link" href="mailto:info@devstudio.com"
+          <a class="contact-link" list href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </h6>
         <h6>
-          <a class="contact-link" href="tel:+48111111111">(48) 111-111-111</a>
+          <a class="contact-link" list href="tel:+48111111111">(48) 111-111-111</a>
         </h6>
       </div>
-    </header>
+      </div>
+      </header>
 
     <main class="main-description">
       <section class="main-first-section-effective-solutions">
@@ -101,7 +105,8 @@
 
         <div>
           <h2>Czym się zajmujemy</h2>
-          <img
+          <div class="what-we-do-photo">
+            <img 
             src="images/section-2-czym-sie-zajmujemy/img1-seo-squoosh.jpg"
             width="370"
             height="294"
@@ -119,6 +124,7 @@
             height="294"
             alt="work-3-graphic-designer"
           />
+        </div>
         </div>
       </section>
       <section class="main-third-section-our-team">
@@ -191,7 +197,7 @@
         <li>
           <h3>
             <a class="navigation-list-webstudio" href="./index.html"
-              ><span class="highlight-webstudio" alt="Logo WebStudio">Web</span
+              ><span class="highlight-webstudio">Web</span
               >Studio</a
             >
           </h3>
@@ -200,7 +206,7 @@
           <li>
             <h6>
               <a
-                class="contact-link-maps"
+                class="contact-link-maps" list
                 href="https://goo.gl/maps/ytyZVktENLEFnypA7"
                 >m. Warszawa, Aleje Jerozolimskie 21</a
               >
@@ -208,14 +214,14 @@
           </li>
           <li>
             <h6>
-              <a class="contact-link" href="mailto:info@devstudio.com"
+              <a class="contact-link" list href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </h6>
           </li>
           <li>
             <h6>
-              <a class="contact-link" href="tel:+48111111111"
+              <a class="contact-link" list href="tel:+48111111111"
                 >(48) 111-111-111</a
               >
             </h6>
@@ -223,6 +229,6 @@
         </address>
       </ul>
     </footer>
-    <!--//////////////////////</section>-->
+
   </body>
 </html>
