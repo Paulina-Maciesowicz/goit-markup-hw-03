@@ -11,8 +11,6 @@
 .container {
     width: 1200px;
     display: flex;
-    padding-left: 215px;
-    padding-right: 215px;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -285,7 +283,6 @@ address {
    margin-left: 215px;
 }
 
-
 /* --------------------PORTFOLIO-page----------------- */
 .container-btn {
     width: 1200px;
@@ -296,15 +293,28 @@ address {
     justify-content: center;
 }
 .contener-img {
-    width: 1170px;
+    /* Wycentrowanie sekcji */
+    margin: 0 auto;
 }
-.box:nth-of-type(3n+1) { margin-left: 0;}
-.box:nth-of-type(3n) { margin-right: 0;}
-.box:nth-last-of-type(-n+3) { margin-bottom: 0;}
+.contener-img .wrapper {
+    /* dodawnie flex-wrap tylko do wrappera znajdującego się w container image. */
+    /* Najlepiej utwożyć osobną klasę lub drugą klasę */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Odległośc między poszczególnym dzieckiem ul w z góry doły i z boków */
+    gap: 30px;
+}
+.contener-img .wrapper li {
+    /* Wycentrowanie contentu w li */
+    display: flex;
+    justify-content: center;
+    /* Nadanie takiej samej szerokości jaką ma img */
+    /* width: 370px; JAK DODAJĘ TE WARTOŚĆ TO MI SIĘ PSUJE UKŁAD */
+}
 .tilie-2-porftolio {
     font-weight: 700;
     font-size: 18px;
-    text-align: center; 
+    text-align: center;
 }
 .tilie-2-porftolio-description {
     font-weight: 400;
