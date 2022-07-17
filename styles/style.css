@@ -1,19 +1,18 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 :root {
     --main-font: font-family: 'Roboto', sans-serif;
     --secondary-font: font-family: 'Raleway', sans-serif;
     --main-color: #2196f3;
-    --secondary-color: #F5F4FA;
-    --third-color: #2F303A;
-    --fourth-color: #757575;
-    --fifth-color: #212121;
-    --sixth-color: #ffffff;
+    --secondary-color: #2F303A;
+    --third-color: #F5F4FA
 }
 .container {
-    justify-content: center;
-    width: 1200px;
+    min-width: 1200px;
     margin: 0 auto;
-    flex-direction: column;
-    
 }
 .section {
     padding-top: 94px;
@@ -21,12 +20,13 @@
 }
 .wrapper {
     display: flex;
-    padding: 0;
+    justify-content: center;
+    align-items: center;   
 }
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #ffffff;
-    color: black;
+    color: #000000;
     width: 1600px;
     height: 2349px;
     margin: 0 auto;
@@ -36,29 +36,30 @@ body {
 /* ----------------MIN-RESET------------------------- */
 
 /* remember to define focus styles! */
-:focus {
-	outline: 0;
-}
+
 ol, ul {
 	list-style: none;
-    margin 0;
-    padding 0;
+    margin: 0;
+    padding: 0;
 } 
 h1, h2, h3, h4, h5, h6 {
-    margin 0;
-    padding 0;
+    margin: 0;
+    padding: 0;
 }
 p {
-    padding 0;
+    padding: 0;
 }
-.list {
+.list-style-none {
     list-style: none
 }
-.link {
+.link-style-none {
     text-decoration: none
 }
 img {
     display: block;
+}
+figure {
+    margin:auto 0;
 }
 /* ----------------MIN-RESET-END--------------------- */
 
@@ -75,7 +76,7 @@ img {
     border-radius: 4px;
     color: #212121;
     cursor: pointer;
-    position: absolute;
+    border: none;
 }
 .button-style-1:hover {
     background-color: #2196f3;
@@ -90,15 +91,14 @@ img {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 1.875;
-
     background: #F5F4FA;
     width: 200px;
     height: 50px;
     border-radius: 4px;
     color: #212121;
     cursor: pointer;
-    justify-content: center;
-    margin: 8px;
+    margin-right: 8px;
+    border: none;
 }
 .button-style:hover {
     background-color: #2196f3;
@@ -114,23 +114,24 @@ img {
 /* --------------------HEADER------------------------ */
 
 .header-description {
-    background-color: #F5F4FA;
-    width: 1600px;
+    background-color: #FFFFFF;
+    min-width: 1200px;
     height: 80px;
-    left: 0px;
-    top: 0px;
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    border-bottom: 1px solid #ECECEC;
 }
 .navigation-list {
-    display: inline-flex;
-    align-items: center;
+    display: flex;
+    justify-content: center;
 }
-.navigation-list-webstudio {
+.navigation-logo {
     text-decoration: none;
-    color: black;
+    color: #000000;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
+    margin-right: 93px;
 }
 .highlight-webstudio {
     text-decoration: none;
@@ -139,8 +140,8 @@ img {
 }
 .navigation-list-link {
     text-decoration: none;
-    font-style:normal;
-    color: black;
+    font-style: normal;
+    color: #000000;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.142;
@@ -151,10 +152,7 @@ img {
 }
 .contact {
     display: flex;
-    padding-left: 371px;
-    padding-right: 215px;
-    align-items: center;
-    white-space: nowrap;
+    margin-left: 371px;
 }
 .contact-link {
     text-decoration: none;
@@ -164,35 +162,39 @@ img {
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 3%;
-    margin-right: 50px;
+    margin-left: 50px;
 }
 .contact-link:hover {color: rgba(33, 150, 243, 1);}
 .contact-link:focus {color: rgba(33, 150, 243, 1);}
 
 /* --------------------HEADER-END--------------------- */
 
-/* --------------------MAIN--------------------------- */
+/* --------------MAIN-first-section------------------- */
 
 .first-section {
     background-color: #2F303A;
-    width: 1600px;
-    padding-top: 80px; 
-    padding-bottom: 94px;
-    margin: 0 auto;  
+    min-width: 1200px;
+    min-height: 600px;
+    padding-top: 200px;
+    text-align: center;  
 }
 h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 44px;
     color: #ffffff;
-    text-align: center;
-    margin: 200px 452px 280px 452px;
     line-height: 1.363;
+    width: 670px;
+    height: 120px;
+    margin: 0 auto;
+    margin-bottom: 40px;
 }
 
-/* -------------main-SECONDARY------------------------ */
-
-.text-title{
+/* -------------main-second-section------------------- */
+.second-section {
+    width: min-content;
+}
+.text-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.142;
@@ -206,6 +208,9 @@ h1 {
     line-height: 1.714;
     letter-spacing: 3%;
 }
+
+/* -------------main-third-section------------------- */
+
 h2 {
     font-weight: 700;
     font-size: 36px;
@@ -213,7 +218,7 @@ h2 {
     text-decoration: Bold;
     letter-spacing: 3%;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom:50px;    
 }
 h4 {
     font-weight: 500;
@@ -222,13 +227,12 @@ h4 {
     letter-spacing: 3%;
     text-align: center;
 }
-.what-we-do-photo {
+.photo-work {
     width: 1200px;
     display: flex;
-    padding-left: 215px;
-    padding-right: 215px;
-    display: flex;
     justify-content: space-between;
+    padding-bottom: 94px;
+    margin: 0 auto;
 }
 .job-name {
     color: #757575;
@@ -239,28 +243,48 @@ h4 {
     text-align: center;
 }
 
-/* -----------------main-THIRD------------------------ */
+/* -----------------main-fourth-section-------------- */
 
-.our-team {
-    padding-top: 94px;
-}
-.third-section {
+.fourth-section {
     background-color: #F5F4FA;
-    width: 1600px;
-    height: 648px;   
+    min-width: 1200px;
+    height: 648px;
 }
-.container-our-team {
-    display: flex;
-    padding: 0;
-    justify-content: center;
+.box-person{
+    margin-right: 30px;
+}
+.frame-person {
+    padding: 30px 70px 30px 70px; 
 }
 
 /* --------------------MAIN-END---------------------- */
 
+/* --------------------FOOTER------------------------ */
 .footer-description {
     background-color: #2F303A;
-    width: 1600px;
+    min-width: 1200px;
     height: 252px;
+    padding-left: 200px;
+    padding-top: 60px;
+
+}
+.navigation-logo-2 {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;    
+}
+.contact-link-2 {
+    text-decoration: none;
+    font-style: normal;
+    color: #757575;
+    line-height: 1.714;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 3%;
+}
+.contact-link-2:hover {color: rgba(33, 150, 243, 1);}
+.contact-link-2:focus {color: rgba(33, 150, 243, 1);
 }
 .contact-link-maps {
     color: #ffffff;
@@ -271,12 +295,10 @@ h4 {
     line-height: 1.714;
     letter-spacing: 3%;}
 .contact-link-maps:hover {color: rgba(33, 150, 243, 1);}
-.contact-link-maps:focus {color: rgba(33, 150, 243, 1);}
-.contact-link-footer {
-    margin-bottom: 9px;
+.contact-link-maps:focus {color: rgba(33, 150, 243, 1);
 }
-address {
-   margin-left: 215px;
+.adres{
+    margin-top:20px;
 }
 
 /* --------------------PORTFOLIO-page----------------- */
@@ -284,14 +306,14 @@ address {
 .container-btn {
     width: 1200px;
     display: flex;
-    padding-left: 215px;
-    margin-top: 94px;
-    margin-bottom: 50px;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .contener-img {
     /* Wycentrowanie sekcji */
     margin: 0 auto;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 .contener-img .wrapper {
     /* dodawnie flex-wrap tylko do wrappera znajdującego się w container image. */
@@ -301,22 +323,20 @@ address {
     /* Odległośc między poszczególnym dzieckiem ul w z góry doły i z boków */
     gap: 30px;
 }
-.contener-img .wrapper li {
-    /* Wycentrowanie contentu w li */
-    display: flex;
-    justify-content: center;
-    /* Nadanie takiej samej szerokości jaką ma img */
-    /* width: 370px; JAK DODAJĘ TE WARTOŚĆ TO MI SIĘ PSUJE UKŁAD */
+.frame-portfolio {
+    border-bottom: 1px solid #E5E5E5;
+    border-right: 1px solid #E5E5E5;
+    border-left: 1px solid #E5E5E5;
+    padding: 20px 24px 20px 24px;    
 }
 .tilie-2-porftolio {
     font-weight: 700;
     font-size: 18px;
-    text-align: center;
+    text-align: left; 
 }
 .tilie-2-porftolio-description {
     font-weight: 400;
-    font-size: 16px;
-    text-align: center;
+    font-size: 16px;   
 }
 /* --------------------PORTFOLIO-end----------------- */
 

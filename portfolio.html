@@ -21,53 +21,49 @@
 
   <body>
     <!--content-->
-    <header class="header-description">
-      <div class="container">
-        <!--navigation menu-->
-        <nav>
-          <ol class="navigation-list">
-            <li>
-              <h3 class="navigation-logo">
-                <a class="navigation-list-webstudio" href="./index.html"
-                  ><span class="highlight-webstudio">Web</span>Studio</a
-                >
-              </h3>
-            </li>
-            <!-- navigation to other pages -->
-            <li class=".navigation-list-link-item">
-              <a class="navigation-list-link" list href="./agencja.html"
-                >Agencja</a
+    <header class="container header-description">
+      <!--navigation menu-->
+      <nav class="navigation-list">
+        <ol class="list-style-none navigation-list">
+          <li>
+            <h3>
+              <a class="navigation-logo" href="./index.html"
+                ><span class="highlight-webstudio">Web</span>Studio</a
               >
-            </li>
-            <li class=".navigation-list-link-item">
-              <a class="navigation-list-link" list href="./portfolio.html"
-                >Portfolio</a
-              >
-            </li>
-            <li class=".navigation-list-link-item">
-              <a class="navigation-list-link" list href="./kontakt.html"
-                >Kontakt</a
-              >
-            </li>
-          </ol>
-        </nav>
+            </h3>
+          </li>
+          <!-- navigation to other pages -->
+          <li class="list-style-none">
+            <a class="navigation-list-link" href="./agencja.html">Agencja</a>
+          </li>
+          <li class="list-style-none">
+            <a class="navigation-list-link" href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="list-style-none">
+            <a class="navigation-list-link" href="./kontakt.html">Kontakt</a>
+          </li>
+        </ol>
         <div class="contact">
           <h6>
-            <a class="contact-link" list href="mailto:info@devstudio.com"
+            <a
+              class="list-style-none contact-link"
+              href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </h6>
           <h6>
-            <a class="contact-link" list href="tel:+48111111111"
+            <a class="list-style-none contact-link" href="tel:+48111111111"
               >(48)111-111-111</a
             >
           </h6>
         </div>
-      </div>
+      </nav>
     </header>
 
-    <main>
-      <section>
+    <main class="section">
+      <section class="wrapper">
         <!--section-1 buttony-forwarding-->
         <ul class="container-btn">
           <!--buttons-->
@@ -93,14 +89,14 @@
         <!--section-2 description of the field with a photo-->
         <ul class="wrapper">
           <li>
-            <figure class="box">
+            <figure>
               <img
                 src="images/portfolio/1-technocrack-squoosh.jpg"
                 width="370"
                 height="294"
                 alt="technocrack"
               />
-              <figcaption>
+              <figcaption class="frame-portfolio">
                 <h4 class="tilie-2-porftolio">Technocrack</h4>
                 <p class="tilie-2-porftolio-description">Strona internetowa</p>
               </figcaption>
@@ -108,14 +104,14 @@
           </li>
 
           <li>
-            <figure class="box">
+            <figure>
               <img
                 src="images/portfolio/2-new-orlean-squoosh.jpg"
                 width="370"
                 height="294"
                 alt="grafika-new-orlean-vs-golden-star"
               />
-              <figcaption>
+              <figcaption class="frame-portfolio">
                 <h4 class="tilie-2-porftolio">
                   Grafika New Orlean vs Golden Star
                 </h4>
@@ -125,14 +121,14 @@
           </li>
 
           <li>
-            <figure class="box">
+            <figure>
               <img
                 src="images/portfolio/3-seafood-squoosh.jpg"
                 width="370"
                 height="294"
                 alt="restauracja-seafood"
               />
-              <figcaption>
+              <figcaption class="frame-portfolio">
                 <h4 class="tilie-2-porftolio">Restauracja Seafood</h4>
                 <p class="tilie-2-porftolio-description">Aplikacja</p>
               </figcaption>
@@ -140,7 +136,7 @@
           </li>
 
           <li>
-            <figure class="box">
+            <figure>
               <img
                 src="images/portfolio/4-prime-squoosh.jpg"
                 width="370"
@@ -148,7 +144,7 @@
                 alt="projekt-prime"
               />
 
-              <figcaption>
+              <figcaption class="frame-portfolio">
                 <h4 class="tilie-2-porftolio">Projekt Prime</h4>
                 <p class="tilie-2-porftolio-description">Marketing</p>
               </figcaption>
@@ -156,7 +152,7 @@
           </li>
 
           <li>
-            <figure class="box">
+            <figure>
               <img
                 src="images/portfolio/5-boxes-squoosh.jpg"
                 width="370"
@@ -164,7 +160,7 @@
                 alt="projekt-boxes"
               />
 
-              <figcaption>
+              <figcaption class="frame-portfolio">
                 <h4 class="tilie-2-porftolio">Projekt Boxes</h4>
                 <p class="tilie-2-porftolio-description">Aplikacja</p>
               </figcaption>
@@ -172,7 +168,7 @@
           </li>
 
           <li>
-            <figure class="box">
+            <figure>
               <img
                 src="images/portfolio/6-inspiration-squoosh.jpg"
                 width="370"
@@ -180,7 +176,7 @@
                 alt="inspiration-has-no-borders"
               />
 
-              <figcaption>
+              <figcaption class="frame-portfolio">
                 <h4 class="tilie-2-porftolio">Inspiration has no Borders</h4>
                 <p class="tilie-2-porftolio-description">Strona internetowa</p>
               </figcaption>
@@ -188,7 +184,7 @@
           </li>
 
           <li>
-            <figure class="box">
+            <figure>
               <img
                 src="images/portfolio/7-magazyn-squoosh.jpg"
                 width="370"
@@ -196,7 +192,7 @@
                 alt="magazyn-limited-edition"
               />
 
-              <figcaption>
+              <figcaption class="frame-portfolio">
                 <h4 class="tilie-2-porftolio">Magazyn Limited Edition</h4>
                 <p class="tilie-2-porftolio-description">Dizajn</p>
               </figcaption>
@@ -204,7 +200,7 @@
           </li>
 
           <li>
-            <figure class="box">
+            <figure>
               <img
                 src="images/portfolio/8-lab-squoosh.jpg"
                 width="370"
@@ -212,7 +208,7 @@
                 alt="projekt-lab"
               />
 
-              <figcaption>
+              <figcaption class="frame-portfolio">
                 <h4 class="tilie-2-porftolio">Projekt LAB</h4>
                 <p class="tilie-2-porftolio-description">Marketing</p>
               </figcaption>
@@ -220,7 +216,7 @@
           </li>
 
           <li>
-            <figure class="box">
+            <figure>
               <img
                 src="images/portfolio/9-business-squoosh.jpg"
                 width="370"
@@ -228,7 +224,7 @@
                 alt="growing-business"
               />
 
-              <figcaption>
+              <figcaption class="frame-portfolio">
                 <h4 class="tilie-2-porftolio">Growing Business</h4>
                 <p class="tilie-2-porftolio-description">Aplikacja</p>
               </figcaption>
@@ -238,43 +234,31 @@
       </section>
     </main>
 
-    <footer class="footer-description">
-      <!--footer-content dane-kontaktowe-contact details-->
-      <ul>
-        <li>
-          <h3>
-            <a class="navigation-list-webstudio" href="./index.html"
-              ><span class="highlight-webstudio">Web</span>Studio</a
-            >
-          </h3>
-        </li>
-        <address>
-          <li>
-            <h6>
-              <a
-                class="contact-link-maps"
-                list
-                href="https://goo.gl/maps/ytyZVktENLEFnypA7"
-                >m. Warszawa, Aleje Jerozolimskie 21</a
-              >
-            </h6>
-          </li>
-          <li>
-            <h6>
-              <a class="contact-link" list href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </h6>
-          </li>
-          <li>
-            <h6>
-              <a class="contact-link" list href="tel:+48111111111"
-                >(48) 111-111-111</a
-              >
-            </h6>
-          </li>
-        </address>
-      </ul>
+    <footer class="container footer-description">
+      <!----------------------FOOTER-------------------------->
+      <h3>
+        <a class="navigation-logo-2" href="./index.html"
+          ><span class="highlight-webstudio">Web</span>Studio</a
+        >
+      </h3>
+      <div class="adres">
+        <h6>
+          <a
+            class="contact-link-maps"
+            list
+            href="https://goo.gl/maps/ytyZVktENLEFnypA7"
+            >m. Warszawa, Aleje Jerozolimskie 21</a
+          >
+        </h6>
+        <h6>
+          <a class="contact-link-2" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </h6>
+        <h6>
+          <a class="contact-link-2" href="tel:+48111111111">(48) 111-111-111</a>
+        </h6>
+      </div>
     </footer>
   </body>
 </html>
