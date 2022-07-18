@@ -78,7 +78,7 @@ figure {
     background-color: #2196f3;
     color: #ffffff;
 }
-.button-style-1:hover {
+.button-style-1:focus {
     background-color: #2196f3;
     color: #ffffff;
 }
@@ -99,7 +99,7 @@ figure {
     background-color: #2196f3;
     color: #ffffff;
 }
-.button-style:hover {
+.button-style:focus {
     background-color: #2196f3;
     color: #ffffff;
 }
